@@ -1,13 +1,12 @@
 ---
-import MobileMenu from "../components/Mobilemenu.astro";
 
 ---
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <!-- Navigation Bar for pc-->
-<div class=" hidden md:block">
-  <nav class="fixed ">
+<div class="">
+  <nav class="hidden md:block">
   <div id="navbar"class="bg-[#ffffff] text-[#f04336] flex justify-between items-center h-[15vh] text-xl w-screen ">
     <div id="logo" class="ml-5">Claw</div>
     <div id="link" class=" space-x-10">
@@ -28,7 +27,7 @@ import MobileMenu from "../components/Mobilemenu.astro";
 
 <!-- Navigation Bar for mobile-->
 <div id="body" class="bg-[#f04336] w-screen lg:hidden">
-  <div class="sticky w-screen">
+  <div class="w-screen">
     <div id="navbar"class="bg-[#ffffff] text-[#f04336] flex justify-between items-center h-[100px] text-xl">
        <div id="logo" class="ml-5 w-[150px]">Claw </div>
        <button id="icon" class="bg-[url('/assets/hamburgericon.jpeg')] h-[40px] w-[40px] bg-cover bg-center mr-[30px]"></button>      </div>
