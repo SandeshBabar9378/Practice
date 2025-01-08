@@ -1,0 +1,75 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+<!-- Navigation Bar for mobile-->
+<div id="body" class="bg-[#f04336] w-screen lg:hidden">
+  <div class="sticky w-screen">
+    <div
+      id="navbar"
+      class="bg-[#ffffff] text-[#f04336] flex justify-between items-center h-[100px] text-xl"
+    >
+      <div id="logo" class="ml-5 w-[150px]">Claw</div>
+      <button
+        id="icon"
+        class="bg-[url('/assets/hamburgericon.jpeg')] h-[40px] w-[40px] bg-cover bg-center mr-[30px]"
+      ></button>
+    </div>
+  </div>
+  <div
+    id="cloud2"
+    class="relative bottom-6 w-screen h-[6.2vh] bg-cover bg-center bg-no-repeat bg-[url('/assets/cloud.png')]"
+  >
+    <!--cloud -->
+  </div>
+</div>
+
+<!--menu -->
+<div
+  id="Mobile_menu"
+  class="h-screen w-[300px] fixed right-0 bg-white top-0 z-10 hidden"
+>
+  <div
+    class="text-[#f04336] flex justify-around items-center h-[15vh] border-b-[1px] border-gray-400"
+  >
+    <span id="logo" class="text-xl h-[37px] w-[150px]">CLaw</span>
+    <button
+      id="cross"
+      class="relative bottom-2 bg-[url('/assets/cross.png')] bg-cover bg-center bg-no-repeat h-[20px] w-[20px]"
+    ></button>
+  </div>
+  <a class="menu_element">Home</a>
+  <a class="menu_element">Why Me?</a>
+  <a class="menu_element">Adopt</a>
+  <a class="menu_element">Contact</a>
+  <a class="menu_element">Footer</a>
+  <div id="social_link" class="">
+    <ul
+      class="flex justify-center items-center space-x-2 px-[25px] py-[30px] w-[300px] h-[100px]"
+    >
+      <a href="https://www.google.com" style="font-size:24px" class="fa"
+        >&#xf2c6;</a
+      >
+      <a style="font-size:24px" class="fa">&#xf16d;</a>
+      <a style="font-size:24px" class="fa">&#xf16a;</a>
+      <a style="font-size:24px" class="fa">&#xf09a;</a>
+    </ul>
+  </div>
+</div>
+<style>
+  .menu_element {
+    @apply flex items-center  h-[55px] px-[25px] py-[10px] text-[15px] text-[#0a303a] font-medium border-b-[1px] border-gray-400;
+  }
+</style>
+<script is:inline>
+  document.getElementById("icon").addEventListener("click", () => {
+    document.getElementById("Mobile_menu").classList.toggle("hidden");
+    document.getElementById("body").classList.toggle("blur-sm");
+  });
+  document.getElementById("cross").addEventListener("click", () => {
+    document.getElementById("Mobile_menu").classList.toggle("hidden");
+    document.getElementById("body").classList.toggle("blur-sm");
+  });
+</script>
