@@ -1,6 +1,7 @@
 ---
-import Header from "../components/Header.astro";
+import Navbar from "../components/Navbar.astro";
 import BackToTop from "../components/BackToTop.astro";
+import Paw from '../components/RotatePaw.astro'
 
 ---
 
@@ -17,17 +18,28 @@ import BackToTop from "../components/BackToTop.astro";
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<Header/>
-		<div class="h-[2000px] bg-gray-300">
-			Content goes here
-		</div>
-		<BackToTop/>
+		<Navbar/>
+			<div class="bg-slate-600 h-[2000px]">
+			<nav class="bg-white h-[21.2vh]"></nav>
+				<img src="/assets/WhitePaw.png" alt="Paw" class="relative ml-[60vw] top-[] animate-[wiggle_1s_ease-in-out_infinite]"/>
+			 <div class=" lg:2/6 xl:w-2/4 mt-20 lg:mt-40 lg:ml-16 text-left">
+				<h2 class="text-6xl font-semibold text-gray-900 ">Best Friend with Happy Time</h2>
+				<p class="mt-6 text-xl font-light text-true-gray-500 antialiased">Human Shampoo on Dogs After six days of delirat, the jury found Hernandez guilty of first-degree murder.</p>
+				<button class="mt-6 px-8 py-4 rounded-full font-normal tracking-wide bg-gradient-to-b from-blue-600 to-blue-700 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+				  Download for Free
+				</button>
+			  </div>
+			  
+			</div> 
+		<BackToTop/> 
+		<!-- <Paw/> -->
 	</body>
 </html>
 
 <style>
 	html,
 	body {
+		font-family: sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
 		margin: 0;
 		width: 100%;
 		height: 100%;

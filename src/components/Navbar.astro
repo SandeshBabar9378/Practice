@@ -1,0 +1,26 @@
+---
+import MobileMenu from "../components/Mobilemenu.astro";
+
+---
+
+<!-- Navigation Bar for pc-->
+<div class="">
+  <nav class="fixed hidden md:block">
+  <div id="navbar"class="bg-[#ffffff] text-[#f04336] flex justify-between items-center h-[15vh] text-xl w-screen ">
+    <div id="logo" class="ml-5">Claw</div>
+    <div id="link" class=" space-x-10">
+      <a class="">Link 1</a>
+      <a class="">Link 2</a>
+      <a class="">Link 3</a>
+    </div>
+    <div id="login" class="mr-5">
+      <a>Adopt</a>
+    </div>
+  </div>
+  <div id="cloud1" class="relative bottom-6 w-screen h-[6.2vh] bg-cover bg-center bg-no-repeat bg-[url('/assets/cloud.png')]" >
+    <!--cloud -->
+  </div>
+  </nav>
+</div>
+
+<MobileMenu/>
