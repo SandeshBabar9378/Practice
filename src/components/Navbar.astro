@@ -5,20 +5,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <!-- Navigation Bar for pc-->
-<div class="">
-  <nav class="hidden md:block">
-  <div id="navbar"class="bg-[#ffffff] text-[#f04336] flex justify-between items-center h-[25vh] text-xl w-screen ">
-    <div id="logo" class="ml-5">Claw</div>
-    <div id="link" class=" space-x-10">
-      <a class="">Link 1</a>
-      <a class="">Link 2</a>
-      <a class="">Link 3</a>
+<div class="hidden lg:block">
+  <nav class="relative md:h-[16vh]">
+  <div id="navbar"class="bg-[#ffffff] text-[#f04336] flex justify-between items-center md:h-[15vh] text-xl w-screen ">
+    <div id="logo" class="ml-[5%]">Claw</div>
+    <div id="link" class="flex gap-1">
+      <a href="#" class="h-[40px] w-[100px] p-3 text-center font-extrabold hover:bg-[url('/assets/hoverbg.svg')] hover:bg-cover hover:bg-center hover:bg-no-repeat hover:text-white flex justify-center items-center hover:duration-500"> 
+        Link 1
+      </a>
+      <a href="#" class="h-[40px] w-[100px] p-3 text-center font-extrabold hover:bg-[url('/assets/hoverbg.svg')] hover:bg-cover hover:bg-center hover:bg-no-repeat hover:text-white flex justify-center items-center hover:duration-500"> 
+        Link 2
+      </a>
+      <a href="#" class="h-[40px] w-[100px] p-3 text-center font-extrabold hover:bg-[url('/assets/hoverbg.svg')] hover:bg-cover hover:bg-center hover:bg-no-repeat hover:text-white flex justify-center items-center hover:duration-500"> 
+        Link 3
+      </a>
+      <a href="#" class="h-[40px] w-[100px] p-3 text-center font-extrabold hover:bg-[url('/assets/hoverbg.svg')] hover:bg-cover hover:bg-center hover:bg-no-repeat hover:text-white flex justify-center items-center hover:duration-500"> 
+        Link 4
+      </a>
     </div>
-    <div id="login" class="mr-5">
-      <a>Adopt</a>
-    </div>
+    <button class="bg-[red] h-[50px] w-[130px] mr-[5%] text-base font-bold rounded-lg flex justify-center gap-1 items-center cursor-pointer transition-[8.0s] relative overflow-hidden text-[white] z-[1] before:absolute before:w-full before:h-[0%] before:z-[2] before:duration-1000 before:rounded-[50%_50%_0_0] before:left-0 before:bottom-0 hover:before:h-[180%] before:bg-[#0a303a]">
+      <p class="relative z-[3]">Adopt Me</p>
+      <img src="/assets/transpaw.png" alt="TransPaw" class="relative z-[3] rotate-45 h-5"/>
+    </button>
   </div>
-  <div id="cloud1" class="relative bottom-6 w-screen h-[6.2vh] bg-cover bg-center bg-no-repeat bg-[url('/assets/cloud.png')] bg-slate-600" >
+  <div class="relative bottom-6 w-screen h-[6.4vh]  bg-cover bg-no-repeat bg-[url('/assets/cloud.png')] " >
     <!--cloud -->
   </div>
   </nav>
@@ -26,13 +36,13 @@
 
 
 <!-- Navigation Bar for mobile-->
-<div id="body" class="bg-[#f04336] w-screen lg:hidden">
-  <div class="w-screen">
+<div id="body" class="bg-[#f4f1ec] relative shadow-2xl w-screen lg:hidden">
+  <div class="w-screen h-[vh]">
     <div id="navbar"class="bg-[#ffffff] text-[#f04336] flex justify-between items-center h-[100px] text-xl">
        <div id="logo" class="ml-5 w-[150px]">Claw </div>
        <button id="icon" class="bg-[url('/assets/hamburgericon.jpeg')] h-[40px] w-[40px] bg-cover bg-center mr-[30px]"></button>      </div>
   </div>
-  <div id="cloud2" class="relative bottom-6 w-screen h-[6.2vh] bg-cover bg-center bg-no-repeat bg-[url('/assets/cloud.png')]" >
+  <div class="relative z-20 bottom-6 w-screen h-[6.2vh] bg-cover bg-center bg-[url('/assets/cloud.png')]" >
     <!--cloud -->
   </div>
 </div>
