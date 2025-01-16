@@ -1,5 +1,10 @@
 ---
-import Brand from '../components/Brand.astro';
+import BackToTop from "../components/BackToTop.astro";
+import Navbar from "../components/Navbar.astro";
+import DogLists from "../components/DogList.astro";
+import Footer from "../components/Footer.astro";
+import FaqSection from "../components/Faq_section.astro";
+import AfterFaq from "../components/AfterFaq.astro";
 ---
 
 
@@ -22,8 +27,12 @@ import Brand from '../components/Brand.astro';
 		
 	</head>
 	<body>
-		<Brand></Brand>	
-
+		<Navbar/>
+		<DogLists/>
+		<FaqSection/>
+		<AfterFaq/>
+		<BackToTop/>
+		<Footer/>
 		
 	</body>
 </html>
